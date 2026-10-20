@@ -180,7 +180,10 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
 @media (max-width: 960px) {
   .s-hero { grid-template-columns: 1fr; }
   .s-hero__widget { position: static; }
-  .s-hero__bg { height: 420px; }
+  .s-hero__bg { height: 480px; }
+  .s-hero__bg img { opacity: .85; filter: saturate(1.05) brightness(1.25); }
+  .s-hero__bg::after { background: linear-gradient(180deg, transparent 30%, var(--c-canvas) 98%); }
+  .s-hero h1, .s-lead { text-shadow: 0 1px 14px rgb(0 0 0 / .75), 0 0 2px rgb(0 0 0 / .6); }
   .s-hero__photo { display: none; }
   .s-incl, .s-contacts { grid-template-columns: 1fr; }
 }
